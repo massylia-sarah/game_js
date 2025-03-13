@@ -1,0 +1,64 @@
+
+.nosifer-regular {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://wallpaperdelight.com/wp-content/uploads/2025/01/An-eerie-yet-graceful-wallpaper-featuring-a-skull-nestled-on-a-bed-of-roses-glowing-in-candlelight-within-a-dark-atmospheric-backdrop.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.game_info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container{
+    height: 400px;
+    width: 500px;
+    border: 1px #440101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 0 0 5px rgba(rgb(185, 93, 93), rgb(207, 133, 133), rgb(211, 115, 115), alpha);
+    border-radius: 6px;
+    overflow: hidden;
+
+}
+
+#target{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 10s infinite;
+}
+
+
+button{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #440101;
+    color: aliceblue;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
+
+@keyframes animateTarget{
+    to{
+        transform: translateY(-200px) rotate(90deg);
+    }
+}
